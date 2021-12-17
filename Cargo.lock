@@ -1118,7 +1118,7 @@ dependencies = [
 [[package]]
 name = "ethers"
 version = "0.6.0"
-source = "git+https://github.com/gakonst/ethers-rs?branch=fix/trim-deps#b7c02d691bab163c5f1be1c703262eac5a5591b4"
+source = "git+https://github.com/gakonst/ethers-rs?branch=fix/trim-deps#f4ce5c684446e1149429b8404d4028e5949f4054"
 dependencies = [
  "ethers-contract",
  "ethers-core",
@@ -1132,7 +1132,7 @@ dependencies = [
 [[package]]
 name = "ethers-contract"
 version = "0.6.0"
-source = "git+https://github.com/gakonst/ethers-rs?branch=fix/trim-deps#b7c02d691bab163c5f1be1c703262eac5a5591b4"
+source = "git+https://github.com/gakonst/ethers-rs?branch=fix/trim-deps#f4ce5c684446e1149429b8404d4028e5949f4054"
 dependencies = [
  "ethers-contract-abigen",
  "ethers-contract-derive",
@@ -1150,7 +1150,7 @@ dependencies = [
 [[package]]
 name = "ethers-contract-abigen"
 version = "0.6.0"
-source = "git+https://github.com/gakonst/ethers-rs?branch=fix/trim-deps#b7c02d691bab163c5f1be1c703262eac5a5591b4"
+source = "git+https://github.com/gakonst/ethers-rs?branch=fix/trim-deps#f4ce5c684446e1149429b8404d4028e5949f4054"
 dependencies = [
  "Inflector",
  "anyhow",
@@ -1171,7 +1171,7 @@ dependencies = [
 [[package]]
 name = "ethers-contract-derive"
 version = "0.6.0"
-source = "git+https://github.com/gakonst/ethers-rs?branch=fix/trim-deps#b7c02d691bab163c5f1be1c703262eac5a5591b4"
+source = "git+https://github.com/gakonst/ethers-rs?branch=fix/trim-deps#f4ce5c684446e1149429b8404d4028e5949f4054"
 dependencies = [
  "ethers-contract-abigen",
  "ethers-core",
@@ -1185,7 +1185,7 @@ dependencies = [
 [[package]]
 name = "ethers-core"
 version = "0.6.0"
-source = "git+https://github.com/gakonst/ethers-rs?branch=fix/trim-deps#b7c02d691bab163c5f1be1c703262eac5a5591b4"
+source = "git+https://github.com/gakonst/ethers-rs?branch=fix/trim-deps#f4ce5c684446e1149429b8404d4028e5949f4054"
 dependencies = [
  "arrayvec 0.7.2",
  "bytes",
@@ -1213,7 +1213,7 @@ dependencies = [
 [[package]]
 name = "ethers-etherscan"
 version = "0.2.0"
-source = "git+https://github.com/gakonst/ethers-rs?branch=fix/trim-deps#b7c02d691bab163c5f1be1c703262eac5a5591b4"
+source = "git+https://github.com/gakonst/ethers-rs?branch=fix/trim-deps#f4ce5c684446e1149429b8404d4028e5949f4054"
 dependencies = [
  "ethers-core",
  "reqwest",
@@ -1226,7 +1226,7 @@ dependencies = [
 [[package]]
 name = "ethers-middleware"
 version = "0.6.0"
-source = "git+https://github.com/gakonst/ethers-rs?branch=fix/trim-deps#b7c02d691bab163c5f1be1c703262eac5a5591b4"
+source = "git+https://github.com/gakonst/ethers-rs?branch=fix/trim-deps#f4ce5c684446e1149429b8404d4028e5949f4054"
 dependencies = [
  "async-trait",
  "ethers-contract",
@@ -1249,7 +1249,7 @@ dependencies = [
 [[package]]
 name = "ethers-providers"
 version = "0.6.0"
-source = "git+https://github.com/gakonst/ethers-rs?branch=fix/trim-deps#b7c02d691bab163c5f1be1c703262eac5a5591b4"
+source = "git+https://github.com/gakonst/ethers-rs?branch=fix/trim-deps#f4ce5c684446e1149429b8404d4028e5949f4054"
 dependencies = [
  "async-trait",
  "auto_impl",
@@ -1279,7 +1279,7 @@ dependencies = [
 [[package]]
 name = "ethers-signers"
 version = "0.6.0"
-source = "git+https://github.com/gakonst/ethers-rs?branch=fix/trim-deps#b7c02d691bab163c5f1be1c703262eac5a5591b4"
+source = "git+https://github.com/gakonst/ethers-rs?branch=fix/trim-deps#f4ce5c684446e1149429b8404d4028e5949f4054"
 dependencies = [
  "async-trait",
  "coins-bip32",
@@ -1301,7 +1301,7 @@ dependencies = [
 [[package]]
 name = "ethers-solc"
 version = "0.1.0"
-source = "git+https://github.com/gakonst/ethers-rs?branch=fix/trim-deps#b7c02d691bab163c5f1be1c703262eac5a5591b4"
+source = "git+https://github.com/gakonst/ethers-rs?branch=fix/trim-deps#f4ce5c684446e1149429b8404d4028e5949f4054"
 dependencies = [
  "colored",
  "ethers-core",
@@ -3667,8 +3667,8 @@ checksum = "6bdef32e8150c2a081110b42772ffe7d7c9032b606bc226c8260fd97e0976601"
 
 [[package]]
 name = "svm-rs"
-version = "0.2.0"
-source = "git+https://github.com/gakonst/svm-rs?branch=fix/trim-deps#ee59db1f60ce4532e276ad41bf4d8c2d09812b60"
+version = "0.2.1"
+source = "git+https://github.com/gakonst/svm-rs?branch=fix/trim-deps#a14ebf75665fbcebdb93a526193e721e97d79d1f"
 dependencies = [
  "anyhow",
  "cfg-if 1.0.0",
