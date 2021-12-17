@@ -121,16 +121,16 @@ jobs:
           command: build
           args: --verbose --workspace
 
-      - name: Run tests
-        uses: actions-rs/cargo@v1
-        with:
-          use-cross: ${{ matrix.job.use-cross }}
-          command: test
-          args: --verbose --workspace
-
       - name: Run forge
         uses: actions-rs/cargo@v1
         with:
           use-cross: ${{ matrix.job.use-cross }}
           command: run
-          args: -p foundry-cli --bin forge -- --help
+          args: -p foundry-cli --no-default-features --bin forge -- --help
+
+      - name: Run tests without --default-features to avoid solc-asm being used
+        uses: actions-rs/cargo@v1
+        with:
+          use-cross: ${{ matrix.job.use-cross }}
+          command: test
+          args: --verbose --no-default-features --workspace
