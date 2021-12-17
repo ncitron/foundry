@@ -756,22 +756,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "6245d59a3e82a7fc217c5828a6692dbc6dfb63a0c8c90495621f7b9d79704a0e"
 
 [[package]]
-name = "core-foundation"
-version = "0.9.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "0a89e2ae426ea83155dccf10c0fa6b1463ef6d5fcb44cee0b224a408fa640a62"
-dependencies = [
- "core-foundation-sys",
- "libc",
-]
-
-[[package]]
-name = "core-foundation-sys"
-version = "0.8.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ea221b5284a47e40033bf9b66f35f984ec0ea2931eb03505246cd27a963f981b"
-
-[[package]]
 name = "cpufeatures"
 version = "0.2.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1134,7 +1118,7 @@ dependencies = [
 [[package]]
 name = "ethers"
 version = "0.6.0"
-source = "git+https://github.com/gakonst/ethers-rs?branch=fix/trim-deps#9f8ae388953f67b46b2f824df718a601dfb0b76e"
+source = "git+https://github.com/gakonst/ethers-rs?branch=fix/trim-deps#b7c02d691bab163c5f1be1c703262eac5a5591b4"
 dependencies = [
  "ethers-contract",
  "ethers-core",
@@ -1148,7 +1132,7 @@ dependencies = [
 [[package]]
 name = "ethers-contract"
 version = "0.6.0"
-source = "git+https://github.com/gakonst/ethers-rs?branch=fix/trim-deps#9f8ae388953f67b46b2f824df718a601dfb0b76e"
+source = "git+https://github.com/gakonst/ethers-rs?branch=fix/trim-deps#b7c02d691bab163c5f1be1c703262eac5a5591b4"
 dependencies = [
  "ethers-contract-abigen",
  "ethers-contract-derive",
@@ -1166,7 +1150,7 @@ dependencies = [
 [[package]]
 name = "ethers-contract-abigen"
 version = "0.6.0"
-source = "git+https://github.com/gakonst/ethers-rs?branch=fix/trim-deps#9f8ae388953f67b46b2f824df718a601dfb0b76e"
+source = "git+https://github.com/gakonst/ethers-rs?branch=fix/trim-deps#b7c02d691bab163c5f1be1c703262eac5a5591b4"
 dependencies = [
  "Inflector",
  "anyhow",
@@ -1187,7 +1171,7 @@ dependencies = [
 [[package]]
 name = "ethers-contract-derive"
 version = "0.6.0"
-source = "git+https://github.com/gakonst/ethers-rs?branch=fix/trim-deps#9f8ae388953f67b46b2f824df718a601dfb0b76e"
+source = "git+https://github.com/gakonst/ethers-rs?branch=fix/trim-deps#b7c02d691bab163c5f1be1c703262eac5a5591b4"
 dependencies = [
  "ethers-contract-abigen",
  "ethers-core",
@@ -1201,7 +1185,7 @@ dependencies = [
 [[package]]
 name = "ethers-core"
 version = "0.6.0"
-source = "git+https://github.com/gakonst/ethers-rs?branch=fix/trim-deps#9f8ae388953f67b46b2f824df718a601dfb0b76e"
+source = "git+https://github.com/gakonst/ethers-rs?branch=fix/trim-deps#b7c02d691bab163c5f1be1c703262eac5a5591b4"
 dependencies = [
  "arrayvec 0.7.2",
  "bytes",
@@ -1229,7 +1213,7 @@ dependencies = [
 [[package]]
 name = "ethers-etherscan"
 version = "0.2.0"
-source = "git+https://github.com/gakonst/ethers-rs?branch=fix/trim-deps#9f8ae388953f67b46b2f824df718a601dfb0b76e"
+source = "git+https://github.com/gakonst/ethers-rs?branch=fix/trim-deps#b7c02d691bab163c5f1be1c703262eac5a5591b4"
 dependencies = [
  "ethers-core",
  "reqwest",
@@ -1242,7 +1226,7 @@ dependencies = [
 [[package]]
 name = "ethers-middleware"
 version = "0.6.0"
-source = "git+https://github.com/gakonst/ethers-rs?branch=fix/trim-deps#9f8ae388953f67b46b2f824df718a601dfb0b76e"
+source = "git+https://github.com/gakonst/ethers-rs?branch=fix/trim-deps#b7c02d691bab163c5f1be1c703262eac5a5591b4"
 dependencies = [
  "async-trait",
  "ethers-contract",
@@ -1265,7 +1249,7 @@ dependencies = [
 [[package]]
 name = "ethers-providers"
 version = "0.6.0"
-source = "git+https://github.com/gakonst/ethers-rs?branch=fix/trim-deps#9f8ae388953f67b46b2f824df718a601dfb0b76e"
+source = "git+https://github.com/gakonst/ethers-rs?branch=fix/trim-deps#b7c02d691bab163c5f1be1c703262eac5a5591b4"
 dependencies = [
  "async-trait",
  "auto_impl",
@@ -1295,7 +1279,7 @@ dependencies = [
 [[package]]
 name = "ethers-signers"
 version = "0.6.0"
-source = "git+https://github.com/gakonst/ethers-rs?branch=fix/trim-deps#9f8ae388953f67b46b2f824df718a601dfb0b76e"
+source = "git+https://github.com/gakonst/ethers-rs?branch=fix/trim-deps#b7c02d691bab163c5f1be1c703262eac5a5591b4"
 dependencies = [
  "async-trait",
  "coins-bip32",
@@ -1317,7 +1301,7 @@ dependencies = [
 [[package]]
 name = "ethers-solc"
 version = "0.1.0"
-source = "git+https://github.com/gakonst/ethers-rs?branch=fix/trim-deps#9f8ae388953f67b46b2f824df718a601dfb0b76e"
+source = "git+https://github.com/gakonst/ethers-rs?branch=fix/trim-deps#b7c02d691bab163c5f1be1c703262eac5a5591b4"
 dependencies = [
  "colored",
  "ethers-core",
@@ -1973,9 +1957,9 @@ checksum = "d87c48c02e0dc5e3b849a2041db3029fd066650f8f717c07bf8ed78ccb895cac"
 dependencies = [
  "http",
  "hyper",
- "rustls 0.20.2",
+ "rustls",
  "tokio",
- "tokio-rustls 0.23.1",
+ "tokio-rustls",
 ]
 
 [[package]]
@@ -3106,18 +3090,18 @@ dependencies = [
  "mime",
  "percent-encoding",
  "pin-project-lite",
- "rustls 0.20.2",
+ "rustls",
  "rustls-pemfile",
  "serde",
  "serde_json",
  "serde_urlencoded",
  "tokio",
- "tokio-rustls 0.23.1",
+ "tokio-rustls",
  "url",
  "wasm-bindgen",
  "wasm-bindgen-futures",
  "web-sys",
- "webpki-roots",
+ "webpki-roots 0.21.1",
  "winreg",
 ]
 
@@ -3236,39 +3220,14 @@ dependencies = [
 
 [[package]]
 name = "rustls"
-version = "0.19.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "35edb675feee39aec9c99fa5ff985081995a06d594114ae14cbe797ad7b7a6d7"
-dependencies = [
- "base64 0.13.0",
- "log",
- "ring",
- "sct 0.6.1",
- "webpki 0.21.4",
-]
-
-[[package]]
-name = "rustls"
 version = "0.20.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d37e5e2290f3e040b594b1a9e04377c2c671f1a1cfd9bfdef82106ac1c113f84"
 dependencies = [
  "log",
  "ring",
- "sct 0.7.0",
+ "sct",
  "webpki 0.22.0",
-]
-
-[[package]]
-name = "rustls-native-certs"
-version = "0.5.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5a07b7c1885bd8ed3831c289b7870b13ef46fe0e856d288c30d9cc17d75a2092"
-dependencies = [
- "openssl-probe",
- "rustls 0.19.1",
- "schannel",
- "security-framework",
 ]
 
 [[package]]
@@ -3351,16 +3310,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "schannel"
-version = "0.1.19"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "8f05ba609c234e60bee0d547fe94a4c7e9da733d1c962cf6e59efa4cd9c8bc75"
-dependencies = [
- "lazy_static",
- "winapi",
-]
-
-[[package]]
 name = "scopeguard"
 version = "1.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -3398,16 +3347,6 @@ dependencies = [
 
 [[package]]
 name = "sct"
-version = "0.6.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "b362b83898e0e69f38515b82ee15aa80636befe47c3b6d3d89a911e78fc228ce"
-dependencies = [
- "ring",
- "untrusted",
-]
-
-[[package]]
-name = "sct"
 version = "0.7.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d53dcdb7c9f8158937a7981b48accfd39a43af418591a5d008c7b22b5e1b7ca4"
@@ -3433,29 +3372,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "827cb7cce42533829c792fc51b82fbf18b125b45a702ef2c8be77fce65463a7b"
 dependencies = [
  "cc",
-]
-
-[[package]]
-name = "security-framework"
-version = "2.4.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "525bc1abfda2e1998d152c45cf13e696f76d0a4972310b22fac1658b05df7c87"
-dependencies = [
- "bitflags",
- "core-foundation",
- "core-foundation-sys",
- "libc",
- "security-framework-sys",
-]
-
-[[package]]
-name = "security-framework-sys"
-version = "2.4.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a9dd14d83160b528b7bfd66439110573efcfbe281b17fc2ca9f39f550d619c7e"
-dependencies = [
- "core-foundation-sys",
- "libc",
 ]
 
 [[package]]
@@ -3943,41 +3859,29 @@ dependencies = [
 
 [[package]]
 name = "tokio-rustls"
-version = "0.22.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "bc6844de72e57df1980054b38be3a9f4702aba4858be64dd700181a8a6d0e1b6"
-dependencies = [
- "rustls 0.19.1",
- "tokio",
- "webpki 0.21.4",
-]
-
-[[package]]
-name = "tokio-rustls"
 version = "0.23.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "4baa378e417d780beff82bf54ceb0d195193ea6a00c14e22359e7f39456b5689"
 dependencies = [
- "rustls 0.20.2",
+ "rustls",
  "tokio",
  "webpki 0.22.0",
 ]
 
 [[package]]
 name = "tokio-tungstenite"
-version = "0.15.0"
+version = "0.16.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "511de3f85caf1c98983545490c3d09685fa8eb634e57eec22bb4db271f46cbd8"
+checksum = "e80b39df6afcc12cdf752398ade96a6b9e99c903dfdc36e53ad10b9c366bca72"
 dependencies = [
  "futures-util",
  "log",
- "pin-project",
- "rustls 0.19.1",
+ "rustls",
  "tokio",
- "tokio-rustls 0.22.0",
+ "tokio-rustls",
  "tungstenite",
- "webpki 0.21.4",
- "webpki-roots",
+ "webpki 0.22.0",
+ "webpki-roots 0.22.1",
 ]
 
 [[package]]
@@ -4137,9 +4041,9 @@ checksum = "59547bce71d9c38b83d9c0e92b6066c4253371f15005def0c30d9657f50c7642"
 
 [[package]]
 name = "tungstenite"
-version = "0.14.0"
+version = "0.16.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a0b2d8558abd2e276b0a8df5c05a2ec762609344191e5fd23e292c910e9165b5"
+checksum = "6ad3713a14ae247f22a728a0456a545df14acf3867f905adff84be99e23b3ad1"
 dependencies = [
  "base64 0.13.0",
  "byteorder",
@@ -4148,13 +4052,12 @@ dependencies = [
  "httparse",
  "log",
  "rand 0.8.4",
- "rustls 0.19.1",
- "rustls-native-certs",
+ "rustls",
  "sha-1",
  "thiserror",
  "url",
  "utf-8",
- "webpki 0.21.4",
+ "webpki 0.22.0",
 ]
 
 [[package]]
@@ -4432,6 +4335,15 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "aabe153544e473b775453675851ecc86863d2a81d786d741f6b76778f2a48940"
 dependencies = [
  "webpki 0.21.4",
+]
+
+[[package]]
+name = "webpki-roots"
+version = "0.22.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c475786c6f47219345717a043a37ec04cb4bc185e28853adcc4fa0a947eba630"
+dependencies = [
+ "webpki 0.22.0",
 ]
 
 [[package]]
