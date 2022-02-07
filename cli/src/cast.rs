@@ -146,6 +146,12 @@ async fn main() -> eyre::Result<()> {
             println!("{}", Cast::new(provider).block(block, full, field, to_json).await?);
         }
         Subcommands::BlockNumber { rpc_url } => {
+            let config = utils::load_config();
+            let rpc_url = match rpc_url {
+                Some(url) => url,
+                None => config.eth_rpc_url.unwrap()
+            };
+            
             let provider = Provider::try_from(rpc_url)?;
             println!("{}", Cast::new(provider).block_number().await?);
         }

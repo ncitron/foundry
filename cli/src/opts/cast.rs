@@ -137,7 +137,7 @@ pub enum Subcommands {
     #[clap(about = "Prints latest block number")]
     BlockNumber {
         #[clap(long, env = "ETH_RPC_URL")]
-        rpc_url: String,
+        rpc_url: Option<String>,
     },
     #[clap(name = "call")]
     #[clap(about = "Perform a local call to <to> without publishing a transaction.")]
